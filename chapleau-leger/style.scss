@@ -1,8 +1,80 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+*{box-sizing: border-box;}
+
+:root {
+  --bg: #f9f6f2;
+  --light-green: #babdb2;
+  --dark-green: #9ba59c;
+  --mustard: #e2d9ba;
+  --peach: #f5cdb3;
+  --mocha: #edd8bd;
+  --beige: #f7ebdb;
+  
+  --txt-color: #525252;
+  --title: 'Playfair Display', serif;
+  --txt: 'Montserrat', sans-serif;
 }
+
+html, body {
+  background-color: var(--bg);
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  min-width: 700px;
+  height: 100px;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  background-color: lightgreen;
+  font-family: var(--txt);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  .logo {
+    margin-left: 20px;
+    display: relative;
+     
+    img {
+        height:50px;
+        display: block;
+        background-color: black;
+    }
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+  }
+  
+  .menu > ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      min-width: 505px;
+      background-color: blue;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    > li {
+      display: inline;
+      background-color: pink;
+      padding: 0 40px;
+    }
+    
+    > li, a {
+        text-decoration: none; 
+        color: var(--txt);       
+    } 
+  }
+  
+  .coeur {
+    padding-right: 50px;
+    min-width: 50px;
+  }
+}
+
