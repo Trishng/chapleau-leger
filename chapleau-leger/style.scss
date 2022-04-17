@@ -15,39 +15,44 @@
 }
 
 html, body {
-  background-color: var(--bg);
+  background-color: black;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-nav {
+.nav {
+  top: 0;
   width: 100%;
   min-width: 700px;
-  height: 100px;
+  height: 120px;
   position: fixed;
   margin: 0;
   padding: 0;
-  background-color: lightgreen;
+  z-index: 1;
+  background-color: var(--bg);
   font-family: var(--txt);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 10px #f9f6f28a;
   
   .logo {
-    margin-left: 20px;
+    margin-left: 50px;
+    padding: 0;
     display: relative;
      
     img {
-        height:50px;
+        height: 80px;
+        margin: 0;
+        padding: 0;
         display: block;
-        background-color: black;
     }
   }
   
   .menu {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 50%;
     align-items: center;
   }
@@ -56,17 +61,16 @@ nav {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      min-width: 505px;
-      background-color: blue;
+      min-width: 600px;
       position: relative;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
 
     > li {
       display: inline;
-      background-color: pink;
-      padding: 0 40px;
+      padding-left: 80px;
+      font-size: 17px;
     }
     
     > li, a {
@@ -76,8 +80,48 @@ nav {
   }
   
   .coeur {
-    padding: 0 100px;
-    min-width: 50px;
+    padding-right: 100px;
   }
 }
 
+.header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 120px;
+  background-color: lightgreen;
+  > .txt {
+      position: absolute;
+      bottom: 50px;
+      left: 100px;
+      z-index: 1;
+      color: #525252;
+      
+      > h5 {
+        font-size: 40px;
+        font-family: var(--txt);
+        font-size: 200;
+        font-style: italic;
+        text-transform: uppercase;
+        transform: translateY(120%);
+      }
+      > h1 {
+        font-size: 90px;
+        font-family: var(--title);
+        font-size: 400;
+        font-style: italic;
+        text-transform: uppercase;
+      }
+
+  }
+  > .img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    background-image:
+    linear-gradient(45deg, #f9f6f2, #f9f6f200),
+    url('https://d3fd5j8wprxn3h.cloudfront.net/wp-content/uploads/2022/03/yae-710x400.jpg');
+    
+  }
+}
