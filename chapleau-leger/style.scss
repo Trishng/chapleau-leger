@@ -17,6 +17,8 @@
 html, body {
   background-color: var(--bg);
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
@@ -45,8 +47,9 @@ nav {
   
   .menu {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     width: 50%;
+    align-items: center;
   }
   
   .menu > ul {
@@ -73,7 +76,7 @@ nav {
   }
   
   .coeur {
-    padding-right: 50px;
+    padding: 0 100px;
     min-width: 50px;
   }
 }
