@@ -128,12 +128,21 @@ html, body {
 }
 
 .main {
-background-color: blue;
-width: 100%;
-height: auto;
-position: relative;
-padding: 120px 0;
+  background-color: var(--bg);
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 120px 0;
+  font-family: var(--txt);
+}
 
+/**
+.carrousel {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
 }
 
 .carrousel {
@@ -142,9 +151,8 @@ padding: 120px 0;
   width: 100%;
   background-color: white;
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
+  
    > img {
      position: relative;
      object-fit: contain;
@@ -152,5 +160,64 @@ padding: 120px 0;
      max-height: 300px;
      padding: 10px;
    }
+**/
+.carrousel {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-color: white;
+  padding: 50px 0 50px 0;
+  
 
+  .lien-art {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+      > a {
+        color: var(--peach); 
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding-right: 65px;
+      }
+  }
 }
+
+.swiper {
+  width: 100%;
+  height: 400px;
+  //margin-top: 20px;
+  >
+  .swiper-scrollbar {
+    background-color: var(--bg);
+    padding: 2px 0;
+    height: auto;
+    border-radius: 0%;
+    margin-top: 20px;
+
+
+    .swiper-scrollbar-drag {
+      background-color: var(--peach);
+      max-width: 150px;
+      height: 3px;
+      border-radius: 0%;
+    }
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+
+  > img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+

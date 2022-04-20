@@ -1,8 +1,16 @@
-import './style.scss'
+import './style.scss';
 
-// import Swiper JS
-import Swiper from 'swiper';
-// import Swiper styles
-import 'swiper/css';
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    slidesPerView: 'auto',
+    slidesPerGroup: 1,
+    spaceBetween: 40,
+    loop: true,
+    speed: 1000,
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
 
-const swiper = new Swiper(...);
+  });
