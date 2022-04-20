@@ -25,7 +25,7 @@ html, body {
   top: 0;
   width: 100%;
   min-width: 700px;
-  height: 120px;
+  height: 90px;
   position: fixed;
   margin: 0;
   padding: 0;
@@ -89,7 +89,7 @@ html, body {
   height: 100vh;
   width: 100%;
   position: relative;
-  padding-top: 120px;
+  padding-top: 90px;
   background-color: lightgreen;
   > .txt {
       position: absolute;
@@ -114,7 +114,9 @@ html, body {
       }
 
   }
-  > .img {              //image dans le header
+  
+  //image dans le header
+  > .img {              
     width: 100%;
     height: 100%;
     position: relative;
@@ -132,44 +134,32 @@ html, body {
   width: 100%;
   height: auto;
   position: relative;
-  padding: 120px 0;
+  padding: 10px 0;
   font-family: var(--txt);
+  padding-bottom: 400px;
 }
 
-/**
-.carrousel {
-  position: relative;
-  height: 400px;
-  width: 100%;
-  background-color: white;
-  overflow: hidden;
+.titrepage {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: var(--txt-color);
+  font-weight: 500;
+  margin-top: 70px;
+  margin-left: 7%;
+  margin-bottom: 30px;
 }
 
+//Carrousel d'images
 .carrousel {
   position: relative;
-  height: 400px;
+  height: 550px;
   width: 100%;
   background-color: white;
-  overflow: hidden;
-  
-  
-   > img {
-     position: relative;
-     object-fit: contain;
-     width: 70%;
-     max-height: 300px;
-     padding: 10px;
-   }
-**/
-.carrousel {
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background-color: white;
-  padding: 50px 0 50px 0;
+  padding-top: 60px;
   
 
   .lien-art {
+    top: 5%;
     display: flex;
     flex-direction: row-reverse;
     position: relative;
@@ -186,7 +176,7 @@ html, body {
 
 .swiper {
   width: 100%;
-  height: 400px;
+  height: 415px;
   //margin-top: 20px;
   >
   .swiper-scrollbar {
@@ -194,9 +184,6 @@ html, body {
     padding: 2px 0;
     height: auto;
     border-radius: 0%;
-    margin-top: 20px;
-
-
     .swiper-scrollbar-drag {
       background-color: var(--peach);
       max-width: 150px;
@@ -211,6 +198,7 @@ html, body {
   justify-content: center;
   align-items: center;
   width: auto;
+  padding-bottom: 30px;
 
   > img {
     max-height: 100%;
@@ -219,5 +207,23 @@ html, body {
   }
 }
 
+//Remerciement
 
+.merci {
+  width: 70%;
+  position: relative;
+   > h1 {
+     font-family: var(--title);
+     font-size: 50px;
+     font-style: italic;
+     font-weight: 200;
+     text-transform: uppercase;
+     color: var(--dark-green);
+   }
+   
+   > p {
+     font-size: 23px;
+     color: var(--txt-color);
+   }
+}
 
