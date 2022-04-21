@@ -21,6 +21,10 @@ html, body {
   padding: 0;
 }
 
+.hide {
+  display: none;
+}
+
 .nav {
   top: 0;
   width: 100%;
@@ -31,7 +35,7 @@ html, body {
   padding: 0;
   z-index: 5;
   background-color: var(--bg);
-  font-family: var(--txt);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,6 +43,7 @@ html, body {
   
   .logo {
     margin-left: 50px;
+    margin-right: 40px;
     padding: 0;
     display: relative;
      
@@ -51,37 +56,29 @@ html, body {
   }
   
   .menu {
+    font-family: var(--txt);
     display: flex;
-    justify-content: flex-end;
-    width: 50%;
-    align-items: center;
-  }
-  
-  .menu > ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      min-width: 600px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-
-    > li {
-      display: inline;
-      padding-left: 80px;
-      font-size: 15px;
-    }
-    
-    > li, a {
+    width: 500px;
+    justify-content: space-between;
+    margin-right: 7%;
+      a {
         text-decoration: none; 
         color: var(--txt);       
-    } 
+      }
+
+      .coeur {
+        padding-left: 50px;
+      }
   }
-  
+
   .coeur {
-    padding-right: 100px;
     font-size: 15px;
+  }
+
+  .icon {
+    font-size: 20px;
+    color: var(--dark-green);
+    padding-right: 40px;
   }
 }
 
@@ -176,9 +173,7 @@ html, body {
 .swiper {
   width: 100%;
   height: 415px;
-  //margin-top: 20px;
-  >
-  .swiper-scrollbar {
+  > .swiper-scrollbar {
     background-color: var(--bg);
     padding: 2px 0;
     height: auto;
@@ -302,5 +297,38 @@ html, body {
 
   .two {
     align-items: flex-end;
+  }
+}
+
+//breakpoints
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 576px) { 
+  .swiper {
+    > .swiper-scrollbar {
+        .swiper-scrollbar-drag {
+          height: 10px;
+        }
+    }
+  }
+
+  .carrousel {
+    .lien-art {
+      justify-content: center;
+      > a {
+        padding-right: 0;
+      }
+    }
+  }
+  
+  .merci {
+    justify-content: center;
+    .txt {
+      padding: 0;
+      width: 80%;
+    }
   }
 }

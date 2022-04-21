@@ -15,3 +15,5 @@ const swiper = new Swiper('.swiper', {
     },
 
   });
+
+const menuHamburger = lol;
