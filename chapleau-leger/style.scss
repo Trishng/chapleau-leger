@@ -58,8 +58,8 @@ html, body {
   .menu {
     font-family: var(--txt);
     display: flex;
-    width: 700px;
     justify-content: space-between;
+    margin-right: 7%;
     
       a {
         text-decoration: none; 
@@ -67,18 +67,16 @@ html, body {
       }
 
       .coeur {
+        font-size: 15px;
         padding-left: 50px;
       }
   }
-
-  .coeur {
-    font-size: 15px;
-  }
-
   .icon {
     font-size: 20px;
     color: var(--dark-green);
-    padding-right: 40px;
+    padding: 0 40px;
+    background-color: var(--bg);
+    border: none;
   }
 }
 
@@ -302,18 +300,27 @@ html, body {
 
 //breakpoints
 @media screen and (min-width: 992px) {
-  .icon > p {
+  .menu {
+    width: 500px;
+  }
+
+  .icon {
     display: none;
     visibility: hidden;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .menu > a {
+  .menu {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    > a {
     display: none;
     visibility: hidden;
-  }
-  .icon > p {
+    }
+  } 
+  .icon {
     display: inline;
     visibility: visible;
   }

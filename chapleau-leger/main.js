@@ -1,4 +1,5 @@
 import './style.scss';
+import './_biographie.scss';
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
@@ -16,4 +17,8 @@ const swiper = new Swiper('.swiper', {
 
   });
 
-const menuHamburger = lol;
+  const menuHamburger = document.querySelector('.icon');
+
+  menuHamburger.addEventListener('click', () => {
+    console.log('true');
+  })
