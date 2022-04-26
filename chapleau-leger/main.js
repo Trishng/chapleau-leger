@@ -1,5 +1,6 @@
 import './style.scss';
 import './_biographie.scss';
+import './_contact.scss';
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
