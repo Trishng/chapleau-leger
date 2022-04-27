@@ -38,18 +38,19 @@
         
     <div class="contact-form">
         <div class="photo">
-            <img src="./image/6.jpg" style="width:100px" alt="">
+            <div class="square"></div>
+            <div class="shape"></div>
         </div>
         <form action="/action_page.php">
-        <label for="fname">Nom</label><br/>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <br/>
-        <label for="fname">Courriel</label><br/>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <br/>
-        <label for="subject">Message</label><br/> 
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        <br/>
+        <label for="fname">Nom</label>
+        <input type="text" id="name" name="user_name">
+
+        <label for="fname">Courriel</label>
+        <input type="email" id="mail" name="user_mail">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="user_message"></textarea>
+
         <input type="submit" value="Submit">
         </form>
     </div>
