@@ -27,27 +27,23 @@ html, body {
 }
 
 .nav {
+  float: left;
+  padding: 10px 20px;
+  width: 100%;  
   top: 0;
-  width: 100%;
   min-width: 700px;
   height: 90px;
   position: fixed;
-  margin: 0;
-  padding: 0;
   z-index: 5;
   background-color: var(--bg);
-
+  box-shadow: 0 10px #f9f6f28a;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 10px #f9f6f28a;
-  
   .logo {
     margin-left: 50px;
     margin-right: 40px;
     padding: 0;
-    display: relative;
-     
+
     img {                 
         height: 70px;
         margin: 0;
@@ -55,32 +51,64 @@ html, body {
         display: block;
     }
   }
-  
-  .menu {
+}
+
+.menu a{
+  padding: 10px 20px;
+  text-decoration: none; 
+  color: var(--txt);  
+}
+.menu {
     font-family: var(--txt);
     display: flex;
     justify-content: space-between;
-    margin-right: 7%;
-    
-      a {
-        text-decoration: none; 
-        color: var(--txt);       
-      }
-
-      .coeur {
-        font-size: 15px;
-        padding-left: 50px;
-      }
-  }
-  .icon {
-    font-size: 20px;
-    color: var(--dark-green);
-    padding: 0 40px;
-    background-color: var(--bg);
-    border: none;
+    max-width: 70%;
+    margin-top: 15px;
+}
+.menu .coeur {
+  width: fit-content;
+  padding: 10px 20px;
+  font-size: 15px;
+  margin-right: 80px;
+}
+.menu .icon {
+  position: absolute;
+  top: 10px;
+  right: 80px;
+  display: none;
+  color: var(--dark-green);
+  font-size: 20px;
+  padding: 20px 20px;
+  p{
+    padding: 0;
+    margin: 0;
   }
 }
 
+@media screen and (max-width: 992px) {
+  .nav{height:auto;flex-direction: column;}
+  .menu {display: block;padding: 0;margin: 0;}
+  .menu a {display: none;}
+  .menu .icon {display: block;}
+  .menu .coeur {
+    position: absolute;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 25px;
+    top: 0;
+    right: 160px;
+  }
+  .menu.responsive a {
+      display: block;
+      float: none;
+      padding: 10px 20px;
+  }
+  .menu.responsive .menu {
+    margin-top: 60px;
+    display: block;
+  }
+}
+ 
 .header {
   height: 100vh;
   width: 100%;
@@ -303,33 +331,6 @@ html, body {
 }
 
 //breakpoints
-@media screen and (min-width: 992px) {
-  .menu {
-    width: 500px;
-  }
-
-  .icon {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .menu {
-    width: max-content;
-    display: flex;
-    align-items: center;
-    > a {
-    display: none;
-    visibility: hidden;
-    }
-  } 
-  .icon {
-    display: inline;
-    visibility: visible;
-  }
-}
-
 @media screen and (max-width: 576px) { 
   .swiper {
     > .swiper-scrollbar {

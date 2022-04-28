@@ -18,8 +18,11 @@ const swiper = new Swiper('.swiper', {
 
   });
 
-  const menuHamburger = document.querySelector('.icon');
-
-  menuHamburger.addEventListener('click', () => {
-    console.log('true');
-  })
+function menu() {
+  var x = document.getElementById("menu");
+  if (x.className === "menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu";
+  }
+}
