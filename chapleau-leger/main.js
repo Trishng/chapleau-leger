@@ -26,4 +26,15 @@ menu.addEventListener('click', () => {
   } else {
     menu.className = "menu";
   }
-} )
+});
+
+let bioHover = document.querySelector('.biographie');
+let bios = document.querySelector('.bios');
+
+bioHover.addEventListener('mouseover', () => {
+  if (bios.className === "bios") {
+    bios.className += " hover";
+  } else {
+    bios.className = "bios";
+  }
+})

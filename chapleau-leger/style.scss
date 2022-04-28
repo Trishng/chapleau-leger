@@ -36,7 +36,7 @@ html, body {
   position: fixed;
   z-index: 5;
   background-color: var(--bg);
-  box-shadow: 0 10px #f9f6f28a;
+  box-shadow: 0 10px rgba(255, 255, 255, 0.4);
   display: flex;
   justify-content: space-between;
   .logo {
@@ -51,64 +51,105 @@ html, body {
         display: block;
     }
   }
+  .menu a{
+    padding: 10px 20px;
+    text-decoration: none; 
+    color: var(--txt);  
+  }
+  .menu {
+      font-family: var(--txt);
+      display: flex;
+      justify-content: space-between;
+      max-width: 70%;
+      margin-top: 15px;
+  }
+  .menu .coeur {
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-right: 80px;
+  }
+  .menu .icon {
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    display: none;
+    color: var(--dark-green);
+    font-size: 20px;
+    padding: 20px 20px;
+    p{
+      padding: 0;
+      margin: 0;
+    }
+  }
 }
 
-.menu a{
-  padding: 10px 20px;
-  text-decoration: none; 
-  color: var(--txt);  
-}
-.menu {
-    font-family: var(--txt);
-    display: flex;
-    justify-content: space-between;
-    max-width: 70%;
-    margin-top: 15px;
-}
-.menu .coeur {
+.bios {
+  background-color: var(--bg);
   width: fit-content;
-  padding: 10px 20px;
-  font-size: 15px;
-  margin-right: 80px;
-}
-.menu .icon {
+  filter: drop-shadow(0 0 0.1rem #5252526a);
+  margin: auto 0;
+  padding: 10px 0;
+  display: grid;
   position: absolute;
-  top: 10px;
-  right: 80px;
-  display: none;
-  color: var(--dark-green);
-  font-size: 20px;
-  padding: 20px 20px;
-  p{
-    padding: 0;
-    margin: 0;
+  top: 100px;
+  a {
+    display: none;
+  }
+}
+
+.bios .hover {
+  background-color: var(--bg);
+  width: fit-content;
+  filter: drop-shadow(0 0 0.1rem #5252526a);
+  margin: auto 0;
+  padding: 10px 0;
+  display: grid;
+  position: absolute;
+  top: 100px;
+  a:hover {
+    color: var(--bleu);
+    display: block;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .nav{height:auto;flex-direction: column;}
-  .menu {display: block;padding: 0;margin: 0;}
-  .menu a {display: none;}
-  .menu .icon {display: block;}
-  .menu .coeur {
-    position: absolute;
-    margin-left: auto;
-    margin-right: 0;
-    margin-top: 25px;
-    top: 0;
-    right: 160px;
-  }
-  .menu.responsive a {
+  .nav{
+    height:auto;flex-direction: column;
+    .menu {display: block;padding: 0;margin: 0;}
+    .menu a {display: none;}
+    .menu .icon {display: block;}
+    .menu .coeur {
+      position: absolute;
+      margin-left: auto;
+      margin-right: 0;
+      margin-top: 25px;
+      top: 0;
+      right: 160px;
+    }
+    .menu.responsive a {
+        display: block;
+        float: none;
+        padding: 10px 20px;
+    }
+    .menu.responsive .menu {
+      margin-top: 60px;
       display: block;
-      float: none;
-      padding: 10px 20px;
+    }
   }
-  .menu.responsive .menu {
-    margin-top: 60px;
-    display: block;
-  }
+  
 }
- 
+@media screen and (max-width: 576px) {
+  .nav {
+    .menu .icon {
+    margin-right: 55px;
+    }
+    .menu .coeur {
+    margin-right: 20px;
+    }
+  }
+  
+}
 .header {
   height: 100vh;
   width: 100%;
@@ -354,6 +395,15 @@ html, body {
     .txt {
       padding: 0;
       width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    flex-direction: column;
+    li {
+      text-align: center;
     }
   }
 }

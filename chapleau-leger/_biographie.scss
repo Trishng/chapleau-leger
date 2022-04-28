@@ -122,3 +122,31 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .text-bio {
+        grid-template-areas: 
+        "a"
+        "b"
+        "c"
+        "d";
+    }
+
+    .img.b {
+        margin: 0 auto;
+        padding: 0;
+    }
+    .img.c {
+        margin: 0 auto;
+    }
+    .signature {
+        margin-right: 25px;
+        transform: translateY(30px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .text-bio {
+        width: 90%;
+    }
+}
