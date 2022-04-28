@@ -32,6 +32,7 @@ let bioHover = document.querySelector('.biographie');
 let bios = document.querySelector('.bios');
 
 bioHover.addEventListener('mouseover', () => {
+  console.log(bios);
   if (bios.className === "bios") {
     bios.className += " hover";
   } else {
