@@ -18,11 +18,12 @@ const swiper = new Swiper('.swiper', {
 
   });
 
-function menu() {
-  var x = document.getElementById("menu");
-  if (x.className === "menu") {
-    x.className += " responsive";
+let menu = document.getElementById("menu");
+
+menu.addEventListener('click', () => {
+  if (menu.className === "menu") {
+    menu.className += " responsive";
   } else {
-    x.className = "menu";
+    menu.className = "menu";
   }
-}
+} )
