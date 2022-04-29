@@ -19,8 +19,9 @@ const swiper = new Swiper('.swiper', {
   });
 
 let menu = document.getElementById("menu");
+let icon = document.querySelector('.icon');
 
-menu.addEventListener('click', () => {
+icon.addEventListener('click', () => {
   if (menu.className === "menu") {
     menu.className += " responsive";
   } else {
@@ -31,7 +32,7 @@ menu.addEventListener('click', () => {
 let bioHover = document.querySelector('.biographie');
 let bios = document.querySelector('.bios');
 
-bioHover.addEventListener('mouseover', () => {
+bioHover.addEventListener('click', () => {
   console.log(bios);
   if (bios.className === "bios") {
     bios.className += " hover";
