@@ -1,0 +1,132 @@
+.cercle {
+	 position: relative;
+	 width: 70%;
+	 padding-bottom: 70%;
+	 background-color: var(--peach);
+	 border-radius: 50%;
+	 transform: translate(-50%, -50%);
+}
+ .cercle__hubert {
+	 background-color: var(--lime);
+}
+ .container {
+	 top: 0;
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 z-index: 0;
+}
+ .text-bio {
+	 position: relative;
+	 width: 75%;
+	 margin: auto;
+	 display: flex;
+	 align-items: center;
+	 display: grid;
+	 grid-template-areas: "a b" "c d";
+	 margin-bottom: 300px;
+	 color: var(--txt-color);
+}
+ .text-bio .txt h1 {
+	 font-family: var(--title);
+	 text-transform: uppercase;
+	 font-weight: 200;
+	 font-size: larger;
+	 font-size: 70px;
+	 font-style: italic;
+}
+ .text-bio .txt p {
+	 font-family: var(--txt);
+	 font-size: 20px;
+	 font-weight: 500;
+}
+ .text-bio .img {
+	 position: relative;
+	 display: block;
+	 object-fit: fill;
+	 height: 100%;
+}
+ .text-bio .a {
+	 grid-area: a;
+}
+ .text-bio .b {
+	 grid-area: b;
+	 padding-right: 0;
+	 display: block;
+	 margin-left: auto;
+}
+ .text-bio .c {
+	 margin: 0;
+	 grid-area: c;
+	 background-color: var(--mocha);
+	 border: 10px solid var(--mocha);
+	 border-radius: 15px;
+	 transform: translateY(150px);
+}
+ .text-bio .c__hubert {
+	 background-color: var(--mustard);
+	 border: 10px solid var(--mustard);
+}
+ .text-bio .d {
+	 transform: translateY(150px);
+	 grid-area: d;
+}
+ .signature {
+	 object-fit: contain;
+	 position: absolute;
+	 z-index: 1;
+	 max-width: 300px;
+	 width: 100%;
+	 padding: 20px;
+	 border-radius: 90px 0 90px 0;
+	 right: 20%;
+	 bottom: 60%;
+	 background-color: var(--beige);
+}
+ .signature__hubert {
+	 background-color: var(--dark-green);
+}
+ .citation {
+	 background-color: var(--light-green);
+	 position: relative;
+	 display: block;
+	 margin: 10% auto;
+	 width: 70%;
+	 padding: 20px 30px;
+	 border-radius: 90px 0 90px 0;
+}
+ .citation__hubert {
+	 background-color: var(--bleu);
+}
+ .citation h1 {
+	 font-family: var(--title);
+	 text-transform: uppercase;
+	 font-weight: 200;
+	 font-size: larger;
+	 font-size: 70px;
+	 font-style: italic;
+	 color: white;
+	 text-align: center;
+}
+ @media screen and (max-width: 768px) {
+	 .text-bio {
+		 grid-template-areas: "a" "b" "c" "d";
+	}
+	 .img.b {
+		 margin: 0 auto;
+		 padding: 0;
+	}
+	 .img.c {
+		 margin: 0 auto;
+	}
+	 .signature {
+		 margin-right: 25px;
+		 transform: translateY(30px);
+	}
+}
+ @media screen and (max-width: 992px) {
+	 .text-bio {
+		 width: 90%;
+	}
+}
+ 
