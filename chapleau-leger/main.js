@@ -1,11 +1,3 @@
-import './style.scss';
-import './_biographie.scss';
-import './_contact.scss';
-
-import './style.css';
-import './_biographie.css';
-import './_contact.css';
-
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     slidesPerView: 'auto',

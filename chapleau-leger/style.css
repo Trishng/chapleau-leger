@@ -1,6 +1,8 @@
-* {
-	 box-sizing: border-box;
-}
+@import "_biographie.css";
+@import "_contact.css";
+
+* { box-sizing: border-box;}
+
  :root {
 	 --bg: #f9f6f2;
 	 --light-green: #babdb2;
@@ -84,7 +86,7 @@
  .bios {
 	 background-color: var(--bg);
 	 width: fit-content;
-	 filter: drop-shadow(0 0 0.1rem #525252 6a);
+	 filter: drop-shadow(0 0 0.1rem #5252526a);
 	 margin: auto 0;
 	 padding: 10px 0;
 	 display: grid;
@@ -137,48 +139,49 @@
 }
  @media screen and (max-width: 576px) {
 	 .nav .menu .icon {
-		 margin-right: 55px;
+		margin-right: 55px;
 	}
 	 .nav .menu .coeur {
-		 margin-right: 20px;
+		margin-right: 20px;
 	}
 }
  .header {
-	 height: 100vh;
-	 width: 100%;
-	 position: relative;
-	 padding-top: 90px;
-	 z-index: 1;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+	padding-top: 90px;
+	z-index: 1;
 }
  .header > .txt {
-	 position: absolute;
-	 bottom: 30px;
-	 left: 110px;
-	 z-index: 1;
-	 color: var(--txt-color);
+	position: absolute;
+	bottom: 30px;
+	left: 110px;
+	z-index: 1;
+	color: var(--txt-color);
 }
  .header > .txt > h5 {
-	 font-size: 40px;
-	 font-family: var(--txt);
-	 font-weight: 200;
-	 font-style: italic;
-	 text-transform: uppercase;
-	 transform: translateY(150%);
+	font-size: 40px;
+	font-family: var(--txt);
+	font-weight: 200;
+	font-style: italic;
+	text-transform: uppercase;
+	transform: translateY(150%);
 }
  .header > .txt > h1 {
-	 font-size: 75px;
-	 font-family: var(--title);
-	 font-weight: 400;
-	 text-transform: uppercase;
+	font-size: 75px;
+	font-family: var(--title);
+	font-weight: 400;
+	text-transform: uppercase;
 }
  .header > .img {
-	 width: 100%;
-	 height: 100%;
-	 position: relative;
-	 object-fit: cover;
-	 background-image: linear-gradient(45deg, #f9f6f2, #f9f6f2 0), url('https://d3fd5j8wprxn3h.cloudfront.net/wp-content/uploads/2022/03/yae-710x400.jpg');
-	 background-repeat: no-repeat;
-	 background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	object-fit: cover;
+	background-image: linear-gradient(45deg, #f9f6f2, #f9f6f2 0), 
+	url('https://d3fd5j8wprxn3h.cloudfront.net/wp-content/uploads/2022/03/yae-710x400.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
  .main {
 	 background-color: var(--bg);
