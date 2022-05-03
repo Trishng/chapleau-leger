@@ -255,12 +255,12 @@ html, body {
 }
 
 .swiper-slide {
+  background-color: lime;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: auto;
   padding-bottom: 30px;
-
+  width: auto !important;
   > img {
     max-height: 100%;
     max-width: 100%;

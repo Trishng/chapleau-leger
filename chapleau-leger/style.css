@@ -240,11 +240,12 @@
 	 border-radius: 0%;
 }
  .swiper-slide {
-	 display: flex;
-	 justify-content: center;
-	 align-items: center;
-	 width: auto;
-	 padding-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 30px;
+	width: auto !important;
+	 
 }
  .swiper-slide > img {
 	 max-height: 100%;
