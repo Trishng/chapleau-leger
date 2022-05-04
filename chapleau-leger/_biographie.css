@@ -83,10 +83,11 @@
 	padding: 20px;
 	border-radius: 90px 0 90px 0;
 	background-color: var(--beige);
-	transform: translate(-50%,120%);
+	transform: translate(-30%,120%);
 }
 .signature__hubert {
 	background-color: var(--dark-green);
+	transform: translate(-30%,100%);
 }
 .citation {
 	background-color: var(--light-green);
@@ -114,18 +115,16 @@
 @media screen and (max-width: 768px) {
 	.text-bio {
 		grid-template-areas: "a" "b" "c" "d";
-}
+	}
 	.img.b {
 		margin: 0 auto;
 		padding: 0;
-}
+		margin-bottom: 120px;
+	}
 	.img.c {
 		margin: 0 auto;
-}
-	.signature {
-		margin-right: 25px;
-		transform: translateY(30px);
-}
+	}
+
 }
 @media screen and (max-width: 992px) {
 	.text-bio {

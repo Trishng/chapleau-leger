@@ -182,7 +182,16 @@
 	background-size: cover;
 }
 .header > .img.accueil {
-	background-image: linear-gradient(45deg, #f9f6f2, #f9f6f200), url('./image/emerence-01.jpg');
+	background-image: linear-gradient(45deg, #f9f6f2, #f9f6f200), url('./image/hubert-emerence-louest-canadien.jpg');
+}
+.header > .img.bio-eme {
+	background-image: linear-gradient(45deg, #f9f6f2, #f9f6f200), url('./image/emerence-minet-chez-le-barbier.jpg');
+}
+.header > .img.bio-hubert {
+	background-image: linear-gradient(45deg, #f9f6f2, #f9f6f200), url('./image/hubert-la-force-de-la-nature.jpg');
+}
+.header > .img.contact {
+	background-image: linear-gradient(45deg, #f9f6f2, #f9f6f200), url('./image/emerence-un-duo-de-roses.jpg');
 }
 
  .main {
