@@ -1,100 +1,99 @@
 .contact-form {
-	 position: relative;
-	 padding: 45px 50px 35px 50px;
-	 width: 90%;
-	 height: 50%;
-	 margin: auto;
-	 margin-bottom: 50px;
-	 background-color: #88b6b7 73;
-	 display: flex;
-	 justify-content: space-between;
+	position: relative;
+	padding: 45px 50px 35px 50px;
+	width: 90%;
+	height: 50%;
+	margin: auto;
+	margin-bottom: 50px;
+	background-color: #88b6b773;
+	display: flex;
+	justify-content: space-between;
 }
- .contact-form .photo {
-	 width: 50%;
-	 padding-right: 10px 20px;
-	 margin-right: 30px;
-	 height: fit-content;
+.contact-form .photo {
+	width: 50%;
+	padding-right: 10px 20px;
+	margin-right: 30px;
+	height: fit-content;
 }
- .contact-form .photo .square {
-	 background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(136, 182, 183, 1) 100%);
-	 width: 90%;
-	 padding-bottom: 90%;
-	 padding-left: 2%;
-	 padding-right: 2%;
-	 padding-top: 2%;
-	 margin-bottom: 30px;
-	 filter: drop-shadow(1px 1px 0.2rem rgba(0, 0, 0, 0.256));
+.contact-form .photo .square {
+	background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(136, 182, 183, 1) 100%);
+	width: 90%;
+	padding-bottom: 90%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 2%;
+	margin-bottom: 30px;
+	filter: drop-shadow(1px 1px 0.2rem rgba(0, 0, 0, 0.256));
 }
- .contact-form .photo .shape {
-	 position: absolute;
-	 border: 10px solid white;
-	 width: 20%;
-	 padding-bottom: 18%;
-	 margin-left: auto;
-	 border-radius: 0 50% 0 50%;
-	 transform: translate(55%, -95%);
-	 box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2) inset;
+.contact-form .photo .shape {
+	position: absolute;
+	border: 10px solid white;
+	width: 20%;
+	padding-bottom: 18%;
+	margin-left: auto;
+	border-radius: 0 50% 0 50%;
+	transform: translate(55%, -95%);
+	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2) inset;
 }
- .contact-form form {
-	 width: 100%;
-	 height: 100%;
-	 font-family: var(--txt);
-	 color: var(--txt-color);
-	 margin-left: 20px;
-	 padding-left: 20px;
+.contact-form form {
+	width: 100%;
+	height: 100%;
+	font-family: var(--txt);
+	color: var(--txt-color);
+	margin-left: 20px;
+	padding-left: 20px;
 }
- .contact-form form label {
-	 display: block;
-	 padding: 0;
-	 margin: 0;
-	 margin-bottom: 5px;
-	 text-transform: uppercase;
-	 font-weight: 500;
+.contact-form form label {
+	display: block;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+	font-weight: 500;
 }
- .contact-form form input[type="text"], .contact-form form input[type="email"], .contact-form form input[type="message"], .contact-form form textarea {
-	 border: none;
-	 font-size: 16px;
-	 height: auto;
-	 margin: 0;
-	 outline: 0;
-	 padding: 8px;
-	 width: 40%;
-	 min-width: 200px;
-	 font-family: var(--txt);
-	 background-color: white;
-	 color: var(--txt-color);
-	 box-shadow: 0 2px 3px rgba(0, 0, 0, 0.09) inset;
-	 margin-bottom: 10px;
+.contact-form form input[type="text"], .contact-form form input[type="email"], .contact-form form input[type="message"], .contact-form form textarea {
+	border: none;
+	font-size: 16px;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	padding: 8px;
+	width: 40%;
+	min-width: 200px;
+	font-family: var(--txt);
+	background-color: white;
+	color: var(--txt-color);
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.09) inset;
+	margin-bottom: 10px;
 }
- .contact-form form textarea {
-	 width: 100%;
-	 min-height: 100px;
+.contact-form form textarea {
+	width: 100%;
+	min-height: 100px;
 }
- .contact-form form input[type=submit] {
-	 background-color: var(--bleu);
-	 text-transform: uppercase;
-	 color: white;
-	 margin-top: 10px;
-	 padding: 10px 20px;
-	 border: none;
-	 cursor: pointer;
-	 font-weight: 500;
-	 font-family: var(--txt);
-	 font-style: 16px;
-	 margin-right: 0;
+.contact-form form input[type=submit] {
+	background-color: var(--bleu);
+	text-transform: uppercase;
+	color: white;
+	margin-top: 10px;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	font-weight: 500;
+	font-family: var(--txt);
+	font-style: 16px;
+	margin-right: 0;
 }
- .contact-form form input[type=submit]:hover {
-	 background-color: rgba(0, 0, 0, 0);
-	 outline: 3px solid var(--bleu);
-	 color: var(--bleu);
+.contact-form form input[type=submit]:hover {
+	background-color: rgba(0, 0, 0, 0);
+	outline: 3px solid var(--bleu);
+	color: var(--bleu);
 }
- @media screen and (max-width: 576px) {
-	 .contact-form {
-		 flex-direction: column;
-		 align-items: center;
+@media screen and (max-width: 576px) {
+	.contact-form {
+		flex-direction: column;
+		align-items: center;
 	}
-	 .contact-form .photo {
-		 display: none;
+	.contact-form .photo {
+		display: none;
 	}
 }
- 
