@@ -11,7 +11,6 @@ setTimeout(() => {
         el: '.swiper-scrollbar',
         draggable: true,
       },
-
     });
 },1000);
 //quand tous les images se charge, executer, a changer
