@@ -88,6 +88,10 @@
 	outline: 3px solid var(--bleu);
 	color: var(--bleu);
 }
+.contact .info {
+
+}
+
 @media screen and (max-width: 576px) {
 	.contact-form {
 		flex-direction: column;
