@@ -63,12 +63,13 @@
 	 justify-content: space-between;
 	 max-width: 70%;
 	 margin-top: 15px;
+	 margin-right: 100px;
 }
  .nav .menu .coeur {
 	 width: fit-content;
 	 padding: 10px 20px;
 	 font-size: 15px;
-	 margin-right: 80px;
+	 margin-right: 0px;
 }
  .nav .menu .icon {
 	 position: absolute;
@@ -326,31 +327,21 @@
 }
  .footer {
 	 width: 100%;
-	 padding: 100px 100px;
+	 padding: 50px 50px;
 	 display: flex;
-	 justify-content: space-between;
 	 align-items: center;
 	 background-color: var(--dark-green);
 	 color: white;
 	 font-family: var(--txt);
 }
- .footer .menu > ul {
-	 list-style-type: none;
-	 margin: 0;
-	 padding: 0;
-	 position: relative;
-}
- .footer .menu > ul > li {
-	 font-size: 15px;
-	 padding: 5px 0;
-}
- .footer .menu > ul > li, .footer .menu > ul a {
+
+ .footer > a {
 	 text-decoration: none;
 	 color: var(--txt);
+	 width: auto;
+	 padding-left: 30px;
 }
- .footer .two {
-	 align-items: flex-end;
-}
+
  @media screen and (max-width: 576px) {
 	 .swiper > .swiper-scrollbar .swiper-scrollbar-drag {
 		 height: 10px;
@@ -371,10 +362,12 @@
 }
  @media screen and (max-width: 576px) {
 	 .footer {
-		 flex-direction: column;
+		flex-direction: column;
 	}
-	 .footer li {
+	 .footer a {
+		 width: 100%;
 		 text-align: center;
+		 padding: 0;
 	}
 }
  
