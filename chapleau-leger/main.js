@@ -34,7 +34,21 @@ bioHover.addEventListener('click', () => {
   console.log(bios);
   if (bios.className === "bios") {
     bios.className += " hover";
+    oeuvres.className = "oeuvres";
   } else {
     bios.className = "bios";
   }
-})
+});
+
+let oeuvresHover = document.querySelector('.oeuvres-menu');
+let oeuvres = document.querySelector('.oeuvres');
+
+oeuvresHover.addEventListener('click', () => {
+  console.log(bios);
+  if (oeuvres.className === "oeuvres") {
+    oeuvres.className += " hover";
+    bios.className = "bios";
+  } else {
+    oeuvres.className = "oeuvres";
+  }
+});

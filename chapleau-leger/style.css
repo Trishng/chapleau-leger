@@ -84,7 +84,7 @@
 	 padding: 0;
 	 margin: 0;
 }
- .bios {
+ .bios, .oeuvres  {
 	 background-color: var(--bg);
 	 width: fit-content;
 	 filter: drop-shadow(0 0 0.1rem #5252526a);
@@ -92,18 +92,28 @@
 	 padding: 10px 0;
 	 display: grid;
 	 position: absolute;
-	 transform: translateY(45px);
 	 visibility: hidden;
+	 transform: translateY(45px);
 }
- .bios.hover {
+.oeuvres {
+	transform: translate(80%, 45px);
+}
+
+ .bios.hover, 
+ .oeuvres.hover {
 	 visibility: visible;
 }
- .bios.hover a:hover {
+ .bios.hover a:hover, 
+ .oeuvres.hover a:hover {
 	 color: var(--bleu);
 }
+
  @media screen and (max-width: 992px) {
 	 .bios {
-		 transform: translateY(0);
+		 transform: translate(0);
+	}
+	.oeuvres {
+		transform: translate(0, 0);
 	}
 	 .nav {
 		 height: auto;
