@@ -198,7 +198,7 @@
 	background-image: linear-gradient(45deg, #f9f6f2, #f9f6f200), url('./image/hubert-emerence-louest-canadien.jpg');
 }
 .header > .img.bio-eme {
-	background-image: linear-gradient(45deg, #f9f6f2, #f9f6f200), url('./image/enchantement.jpg');
+	background-image: linear-gradient(45deg, #f9f6f2, #f9f6f200), url('image/enchantement.jpg');
 }
 .header > .img.bio-hubert {
 	background-image: linear-gradient(45deg, #f9f6f2, #f9f6f200), url('./image/hubert-la-force-de-la-nature.jpg');
@@ -279,11 +279,12 @@
  .merci {
 	 margin-top: 10px;
 	 width: 100%;
-	 height: 100vh;
+	 height: 60vh;
 	 display: flex;
 	 position: relative;
 	 align-items: center;
 	 overflow: hidden;
+	 padding-bottom: 55px;
 }
  .merci .txt {
 	 width: 70%;
