@@ -99,9 +99,11 @@
 	transform: translate(80%, 45px);
 }
 
- .bios.hover, 
- .oeuvres.hover {
+ .bios.hover {
 	 visibility: visible;
+}
+.oeuvres.hover {
+	visibility: visible;
 }
  .bios.hover a:hover, 
  .oeuvres.hover a:hover {
