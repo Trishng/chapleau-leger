@@ -88,8 +88,37 @@
 	outline: 3px solid var(--bleu);
 	color: var(--bleu);
 }
-.contact .info {
+.two .info {
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	padding-left: 10px;
+	font-weight: 500;
+	color: var(--txt-color);
+}
+.contact-form .two {
+	width: 60%;
+}
+.two .info h1 {
+	color: var(--bleu);
+	margin: 0;
+	display: block;
+	font-family: var(--title);
+	font-weight: bold;
+	font-size: 45px;
 
+}
+.two .info h5 {
+	font-family: var(--txt);
+	font-weight: lighter;
+	font-size: 18px;
+	margin: 10px 0;
+	padding-bottom: 20px;
+}
+.two .info a {
+	text-decoration: none;
+	color: white;
+	padding-top: 10px;
 }
 
 @media screen and (max-width: 576px) {
