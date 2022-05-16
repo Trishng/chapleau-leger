@@ -77,3 +77,16 @@
 		display: none;
 	}
 }
+
+.appel {
+	color: var(--bleu);
+	max-width: 900px;
+	padding: 0 70px;
+	padding-bottom: 70px;
+	margin: auto;
+}
+
+.appel > p {
+	font-size: 20px;
+	color: var(--txt-color);
+}
