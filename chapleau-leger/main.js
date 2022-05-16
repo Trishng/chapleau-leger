@@ -4,12 +4,15 @@ setTimeout(() => {
       slidesPerView: "auto",
       spaceBetween: 40,
       speed: 1000,
+      mousewheel: true,
       loop: true,
-    
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
       // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
-        draggable: true,
       },
 
     });
