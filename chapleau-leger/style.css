@@ -342,13 +342,13 @@
 	width: 350px;
 	padding-bottom: 455px;
 	margin: 20px;
-	filter: grayscale(100%);
+	filter: grayscale(50%);
 }
 .photo-trish:hover {
 	animation: color 1s;
 }
 @keyframes color {
-	from {filter: grayscale(100%);}
+	from {filter: grayscale(50%);}
 	to {filter: grayscale(0%);}
 }
 
