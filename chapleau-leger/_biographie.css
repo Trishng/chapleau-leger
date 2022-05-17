@@ -20,24 +20,24 @@
 	position: relative;
 	width: 75%;
 	margin: auto;
-	display: flex;
 	align-items: center;
 	display: grid;
-	grid-template-areas: "a b" "c d";
-	margin-bottom: 300px;
+	grid-template-areas: 
+	"a b" 
+	"c d"
+	"e e";
 	color: var(--txt-color);
 }
-.text-bio .txt h1 {
-	font-family: var(--title);
-	text-transform: uppercase;
-	font-weight: 200;
-	font-size: larger;
-	font-size: 70px;
-	font-style: italic;
-}
-.text-bio .txt p {
+.text-bio h2 {
 	font-family: var(--txt);
-	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 30px;
+	
+}
+.text-bio p {
+	font-family: var(--txt);
+	font-size: 18px;
 	font-weight: 500;
 }
 .text-bio .img {
@@ -46,13 +46,14 @@
 	max-width: 400px;
 	object-fit: cover;
 }
-.text-bio .img.b {
-	object-fit: contain;
-	max-height: 400px;
-} 
 .text-bio .a {
 	grid-area: a;
 }
+.text-bio .b {
+	object-fit: contain;
+	max-height: 400px;
+} 
+
 .text-bio .b {
 	grid-area: b;
 	padding-right: 0;
@@ -62,18 +63,31 @@
 .text-bio .c {
 	margin: 0;
 	grid-area: c;
-	background-color: var(--mocha);
-	border: 10px solid var(--mocha);
-	border-radius: 15px;
-	transform: translateY(150px);
-}
-.text-bio .c__hubert {
-	background-color: var(--mustard);
-	border: 10px solid var(--mustard);
+	margin-top: 180px;
 }
 .text-bio .d {
-	transform: translateY(150px);
+	margin-top: 180px;
 	grid-area: d;
+}
+.text-bio .e {
+	margin-top: 50px;
+	grid-area: e;
+}
+.txt-g {
+	font-family: var(--txt);
+	font-size: 18px;
+	font-weight: 500;
+	color: var(--txt-color);
+	width: 75%;
+	margin: auto;
+	margin-bottom: 60px;
+
+}
+.txt-g h2 {
+	font-family: var(--txt);
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 30px;
 }
 .signature {
 	position: relative;
@@ -93,7 +107,7 @@
 	background-color: var(--light-green);
 	position: relative;
 	display: block;
-	margin: 10% auto;
+	margin: 5% auto;
 	width: 70%;
 	padding: 20px 30px;
 	border-radius: 90px 0 90px 0;
@@ -114,7 +128,7 @@
 
 @media screen and (max-width: 768px) {
 	.text-bio {
-		grid-template-areas: "a" "b" "c" "d";
+		grid-template-areas: "a" "b" "c" "d" "e";
 	}
 	.img.b {
 		margin: 0 auto;
@@ -122,12 +136,18 @@
 		margin-bottom: 120px;
 	}
 	.img.c {
-		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
-
+	.text-bio .d {
+		margin-top: 0;
+	}
 }
 @media screen and (max-width: 992px) {
 	.text-bio {
 		width: 90%;
-}
+	}
+	.txt-g {
+		width: 90%;
+	}
 }
