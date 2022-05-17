@@ -96,11 +96,9 @@
 	width: 100%;
 	padding: 20px;
 	border-radius: 90px 0 90px 0;
-	background-color: var(--beige);
 	transform: translate(-30%,120%);
 }
 .signature__hubert {
-	background-color: var(--dark-green);
 	transform: translate(-30%,100%);
 }
 .citation {
