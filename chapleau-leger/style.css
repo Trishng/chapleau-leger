@@ -332,28 +332,21 @@
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
 	.merci > .txt {
-		padding-left: 0;
+		padding-left: 5%;
 	}
 }
 .photo-trish {
-	background-image: url("./image/hubert-03.jpg");
+	background-image: url("./image/trish.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 350px;
 	padding-bottom: 455px;
 	margin: 20px;
-	filter: grayscale(50%);
+	filter: grayscale(20%);
 }
 .photo-trish:hover {
-	animation: color 1s;
-}
-@keyframes color {
-	from {filter: grayscale(50%);}
-	to {filter: grayscale(0%);}
-}
-
-.photo-trish:hover {
-	filter: grayscale(0);
+	background-image: url("./image/Trish_au_boulot.jpg");
+	transition-delay: 200ms;
 }
  .merci .txt > p {
 	 font-size: 15px;
